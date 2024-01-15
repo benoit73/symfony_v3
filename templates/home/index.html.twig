@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+<h1> Absences </h2>
+
+<h2> Toutes mes id d'absences : </h2>
+{% for absence in absences %}
+    {{ absence.heure }}
+{% endfor %}
+<p> {{ userEleveId }}  </p>
+{% endblock %}

@@ -1,5 +1,8 @@
 # see https://symfony.com/doc/current/reference/configuration/framework.html
 framework:
+    mailer:          # activate the mailer
+        dsn: '%env(MAILER_DSN)%'
+
     secret: '%env(APP_SECRET)%'
     #csrf_protection: true
     handle_all_throwables: true
